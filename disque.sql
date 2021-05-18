@@ -1,5 +1,5 @@
 -- avant de faire le use music, il aurait fallu créer la BDD ici
-
+create database music;
 use music;
 CREATE TABLE Auteur(
     idAuteur INT NOT NULL AUTO_INCREMENT,
