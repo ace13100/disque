@@ -29,7 +29,8 @@ CREATE TABLE AuTit(
     idTitre INT NOT NULL,
     idAuteur INT NOT NULL,
     foreign key fk_TitAut(idTitre) REFERENCES Titre(idTitre),
-    foreign key(idAuteur) REFERENCES Auteur(idAuteur)
+    foreign key(idAuteur) REFERENCES Auteur(idAuteur),
+    UNIQUE(idTitre, idAuteur)
      -- c'est pas une primary key qu'il faut mettre
     -- il manque les contraintes FK
 )ENGINE=InnoDB;
